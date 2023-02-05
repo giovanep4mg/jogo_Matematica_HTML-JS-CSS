@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogos de Matemática</title>
+    <!--JQuery--->
+    <script src="jquery-3.6.3.js"></script>
+    <!---CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleSoma.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="multiplicacao" id="multiplicacao">
+      <form class="form" id="form">
+        <h2>Multiplicação</h2>
+        <h4 class="ponto" id="ponto">Pontos:0</h4>
+        <h1 id="questao">Quanto é 1 multiplicado por 1 ?</h1>
+        <input
+          type="number"
+          class="input"
+          id="input"
+          placeholder="Digite o número aqui  "
+          autofocus
+          autocomplete="off"
+        />
+        <button type="submit" class="btn">Confirma</button>
+      </form>
+      <script src="index.js"></script>
+    </div>
+    <div class="soma" id="soma">
+      <form class="formSoma" id="formSoma">
+        <h2>Adição</h2>
+        <h4 class="pontoS" id="pontoS">Pontos:0</h4>
+        <h1 id="questaoSoma">Quanto é 1 + 1 ?</h1>
+        <input
+          type="number"
+          class="inputSoma"
+          id="inputSoma"
+          placeholder="Digite o número aqui  "
+          autofocus
+          autocomplete="off"
+        />
+        <button type="submit" class="btnSoma">Confirma</button>
+      </form>
+      <script src="index_soma.js"></script>
+    </div>
+  </body>
+</html>
