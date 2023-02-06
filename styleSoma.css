@@ -3,16 +3,17 @@
     align-items: center;
     text-align: center;
     font-family: cursive;
-
+    border-right-width: 100px;
 }
 
 .formSoma {
-    border-block: inherit;
     background-color: white;
-    padding: 30px;
-    box-shadow: 4px 8px 8px rgba(00, 00, 00, 0.3);
-    border-radius: 10px;
-    margin: 40px;
+    padding: 25px;
+    padding-left: 40px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(00, 00, 00, 0.3);
+    border-radius: 15px;
+    margin: 20px;
 }
 
 .inputSoma {

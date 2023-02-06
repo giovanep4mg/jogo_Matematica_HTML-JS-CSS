@@ -63,3 +63,6 @@ function updateLocalStorage() {
 
     localStorage.setItem("ponto", JSON.stringify(ponto))
 }
+
+
+
