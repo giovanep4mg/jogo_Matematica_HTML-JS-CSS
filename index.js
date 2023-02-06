@@ -22,14 +22,14 @@ let ponto = JSON.parse(localStorage.getItem("ponto"));
 
 // se (não ponto)
 if (!ponto) {
-      ponto = 0;
+    ponto = 0;
 }
 
 //pega o valor na var "pontoE1" e exibi na tela
-pontoE1.innerText = "ponto :"+ponto ;
+pontoE1.innerText = "ponto :" + ponto;
 
 //pega os valores da var "questaoE1", e exibi na tela, com algumas modificações nos números.
-questaoE1.innerText = "Quanto é " + num1 +" multiplicado por " + num2 + " ? "
+questaoE1.innerText = "Quanto é " + num1 + " multiplicado por " + num2 + " ? "
 
 
 //pega os números e multiplica eles, depois salva na var "correctAns"(resposta_correta)
@@ -48,9 +48,9 @@ formE1.addEventListener("submit", () => {
         ponto++
         //executa a função "updateLocalStorage()"
         updateLocalStorage()
-    //senão
+        //senão
     } else {
-    //se não for igual, retira -1, na var "ponto" 
+        //se não for igual, retira -1, na var "ponto" 
         ponto--
         //executa essa função "updateLocalStorage"
         updateLocalStorage()
