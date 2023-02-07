@@ -19,6 +19,7 @@ const formE1 = document.getElementById("form");
 //pega a tag id "ponto", salva na var "pontoE1"
 const pontoE1 = document.getElementById("ponto")
 
+
 //
 let ponto = JSON.parse(localStorage.getItem("ponto"));
 

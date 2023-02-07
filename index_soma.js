@@ -7,7 +7,6 @@ const num2s = Math.ceil(Math.random() * 10)
 
 //pega o que está no id "questaoSoma" e salva na variável "questaoSomaE1".
 const questaoSomaE1 = document.getElementById("questaoSoma");
-console.log("pergunta" + questaoSomaE1.innerText)
 
 //pega o que está no id "inputSoma" e salva na variável "inputSomaE1".
 const inputSomaE1 = document.getElementById("inputSoma");
@@ -18,23 +17,23 @@ const formSomaE1 = document.getElementById("formSoma");
 //pega o que está no id "pontoS" e salva na variável "pontoSE1".
 const pontoSomaE1 = document.getElementById("pontoS")
 
+const imagemE1 = document.getElementById("imagem")
+
+
 //
 let pontoS = JSON.parse(localStorage.getItem("pontoS"));
+
 
 /*
 Se dentro da variável "ponto",
 não estiver em zero.
 adicione um zero
  */
-
 if (!pontoS) {
     pontoS = 0;
 }
 
-
 //pega o valor na var "pontoE1" e exibi na tela
-pontoSomaE1.innerText = "ponto :" + pontoS;
-
 pontoSomaE1.innerText = "ponto :" + pontoS;
 
 //pega os valores da var "questaoE1", e exibi na tela, com algumas modificações nos números.
@@ -54,6 +53,7 @@ formSomaE1.addEventListener("submit", () => {
 
         //se for igual, adiciona +1 na var "ponto"
         pontoS++;
+
         //executa a função "updateLocalStorage()"
         updateLocalStorageSoma()
         //senão
@@ -61,6 +61,7 @@ formSomaE1.addEventListener("submit", () => {
 
         //se não for igual, retira -1, na var "ponto"
         pontoS--;
+
         //executa a função "updateLocalStorage()"
         updateLocalStorageSoma()
     }
@@ -70,5 +71,6 @@ formSomaE1.addEventListener("submit", () => {
 function updateLocalStorageSoma() {
     localStorage.setItem("pontoS", JSON.stringify(+pontoS))
 }
+
 
 
