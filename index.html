@@ -10,7 +10,7 @@
     <!---CSS-->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styleSoma.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleDiv.css" />
   </head>
   <body>
     <div class="multiplicacao" id="multiplicacao">
@@ -30,7 +30,7 @@
       </form>
       <script src="index.js"></script>
     </div>
-    <div class="soma" id="soma">
+    <div class="soma" id="soma" style="width: 500px;" >
       <form class="formSoma" id="formSoma">
         <h2>Adição</h2>
         <h4 class="pontoS" id="pontoS">Pontos:0</h4>
@@ -46,6 +46,23 @@
         <button type="submit" class="btnSoma">Confirma</button>
       </form>
       <script src="index_soma.js"></script>
+    </div>
+    <div class="divisao" id="divisao">
+      <form class="formDiv" id="formDiv">
+        <h2>Divisão</h2>
+        <h4 class="pontoDiv" id="pontoDiv">Pontos:0</h4>
+        <h1 id="questaoDiv">Quanto é 1 dividido por 1 ?</h1>
+        <input
+          type="numberDiv"
+          class="inputDiv"
+          id="inputDiv"
+          placeholder="Digite o número aqui  "
+          autofocus
+          autocomplete="off"
+        />
+        <button type="submit" class="btnDiv">Confirma</button>
+      </form>
+      <script src="indexDiv.js"></script>
     </div>
   </body>
 </html>

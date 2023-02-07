@@ -2,69 +2,67 @@
  * Math.randon() * 10 > fará 10 números aleatório,em decimais.
  * Math.ceil > pega esses 10 números, e coloca eles em inteiro.
  */
-const num1 = Math.ceil(Math.random() * 10)
-const num2 = Math.ceil(Math.random() * 10)
-
-const imagemE1 = document.getElementById("imagem")
+const num1Div = Math.ceil(Math.random() * 100)
+const num2Div = Math.ceil(Math.random() * 2)
 
 //pega a tag id "questao", salva na var "questaoE1"
-const questaoE1 = document.getElementById("questao");
+const questaoDivE1 = document.getElementById("questaoDiv");
 
 //pega a tag id "input", salva na var "inputE1"
-const inputE1 = document.getElementById("input");
+const inputDivE1 = document.getElementById("inputDiv");
 
 //pega a tag id "form", salva na var "formE1"
-const formE1 = document.getElementById("form");
+const formDivE1 = document.getElementById("formDiv");
 
 //pega a tag id "ponto", salva na var "pontoE1"
-const pontoE1 = document.getElementById("ponto")
+const pontoDivE1 = document.getElementById("pontoDiv")
 
 //
-let ponto = JSON.parse(localStorage.getItem("ponto"));
+let pontoDiv = JSON.parse(localStorage.getItem("pontoDiv"));
 
 // se (não ponto)
-if (!ponto) {
-    ponto = 0;
+if (!pontoDiv) {
+    pontoDiv = 0;
 }
 
 //pega o valor na var "pontoE1" e exibi na tela
-pontoE1.innerText = "ponto :" + ponto;
+pontoDivE1.innerText = "ponto :" + pontoDiv;
 
 //pega os valores da var "questaoE1", e exibi na tela, com algumas modificações nos números.
-questaoE1.innerText = "Quanto é " + num1 + " multiplicado por " + num2 + " ? "
+questaoDivE1.innerText = "Quanto é " + num1Div + " dividido por " + num2Div + " ? "
 
 
 //pega os números e multiplica eles, depois salva na var "correctAns"(resposta_correta)
-const correctAns = num1 * num2;
+const correctDivAns = num1Div / num2Div;
 
 //adiciona um ouvinte, no botão "submit"
-formE1.addEventListener("submit", () => {
+formDivE1.addEventListener("submit", () => {
 
     //pega o valor adicionado no "input",e salva na var "userAns"(resposta_usuario)
-    const userAns = +inputE1.value;
+    const userAns = +inputDivE1.value;
 
     //se (resposta_usuario é igual a resposta_correta)
     if (userAns == correctAns) {
 
         //se for igual, adiciona +1 na var "ponto"
-        ponto++
+        pontoDiv++
 
         //executa a função "updateLocalStorage()"
-        updateLocalStorage()
+        updateLocalStorageDiv()
         //senão
     } else {
         //se não for igual, retira -1, na var "ponto" 
-        ponto--
+        pontoDiv--
         //executa essa função "updateLocalStorage"
-        updateLocalStorage()
+        updateLocalStorageDiv()
     }
 
 })
 
 //Função, vai atualizar os pontos
-function updateLocalStorage() {
+function updateLocalStorageDiv() {
 
-    localStorage.setItem("ponto", JSON.stringify(ponto))
+    localStorage.setItem("pontoDiv", JSON.stringify(pontoDiv))
 }
 
 
