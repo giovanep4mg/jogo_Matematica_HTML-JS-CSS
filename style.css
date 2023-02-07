@@ -1,10 +1,17 @@
-html{
+html {
     background-image: url("cerebro_numeros.jpg");
     background-size: contain;
     background-position: 100%;
 }
-div{
+
+div {
     display: inline-block;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    font-size: 3rem;
 }
 
 .multiplicacao {
@@ -12,7 +19,7 @@ div{
     align-items: center;
     text-align: center;
     font-family: cursive;
-    
+
 }
 
 

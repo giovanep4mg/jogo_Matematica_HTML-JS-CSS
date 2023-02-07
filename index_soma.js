@@ -52,7 +52,7 @@ formSomaE1.addEventListener("submit", () => {
         pontoS++;
 
         //executa a função "updateLocalStorage()"
-        updateLocalStorage()
+        updateLocalStorageSoma()
         //senão
     } else {
 
@@ -60,7 +60,7 @@ formSomaE1.addEventListener("submit", () => {
         pontoS--;
 
         //executa a função "updateLocalStorage()"
-        updateLocalStorage()
+        updateLocalStorageSoma()
     }
 
 })
@@ -69,3 +69,6 @@ function updateLocalStorage() {
     localStorage.setItem("pontoS", JSON.stringify(+pontoS))
 }
 
+
+
+console.log("update local storage soma  :" + updateLocalStorage())
