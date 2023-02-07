@@ -17,9 +17,12 @@ const formSomaE1 = document.getElementById("formSoma");
 //pega o que está no id "pontoS" e salva na variável "pontoSE1".
 const pontoSomaE1 = document.getElementById("pontoS")
 
+const imagemE1 = document.getElementById("imagem")
+
+
 //
 let pontoS = JSON.parse(localStorage.getItem("pontoS"));
-console.log("pontos:  " + pontoS)
+
 
 /*
 Se dentro da variável "ponto",
@@ -65,10 +68,9 @@ formSomaE1.addEventListener("submit", () => {
 
 })
 
-function updateLocalStorage() {
+function updateLocalStorageSoma() {
     localStorage.setItem("pontoS", JSON.stringify(+pontoS))
 }
 
 
 
-console.log("update local storage soma  :" + updateLocalStorage())
