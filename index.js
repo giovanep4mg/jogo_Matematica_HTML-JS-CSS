@@ -5,7 +5,6 @@
 const num1 = Math.ceil(Math.random() * 10)
 const num2 = Math.ceil(Math.random() * 10)
 
-const imagemE1 = document.getElementById("imagem")
 
 //pega a tag id "questao", salva na var "questaoE1"
 const questaoE1 = document.getElementById("questao");

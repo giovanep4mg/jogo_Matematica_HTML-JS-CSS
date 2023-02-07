@@ -1,39 +1,27 @@
-html {
-    background-image: url("cerebro_numeros.jpg");
-    background-size: contain;
-    background-position: 100%;
-}
-
 div {
     display: inline-block;
+    border-left: 10px;
 }
 
-h2 {
-    font-family: 'Courier New', Courier, monospace;
-    color: blue;
-    font-size: 3rem;
-}
-
-.divisao {
-    margin: 50px;
+.subtracao {
+    margin: 40px;
     align-items: center;
     text-align: center;
     font-family: cursive;
 
 }
 
-
-.formDiv {
+.formSub {
     background-color: white;
+    padding: 25px;
+    padding-left: 40px;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(00, 00, 00, 0.3);
     border-radius: 10px;
-    margin: 5px;
+    margin: 10px;
 }
 
-
-
-.inputDiv {
+.inputSub {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -45,15 +33,12 @@ h2 {
 }
 
 
-
-.inputDiv::placeholder {
+.inputSub::placeholder {
     color: lightgray;
     font-family: cursive;
 }
 
-
-
-.btnDiv {
+.btnSub {
     background-color: green;
     color: white;
     border: none;
@@ -62,17 +47,17 @@ h2 {
     padding: 10px;
     font-size: 20px;
     font-family: cursive;
-    margin: 15px;
+    margin: 20px 0;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(00, 00, 00, 0.3);
     cursor: pointer;
 }
 
-.btnDiv:hover {
+.btnSub:hover {
     filter: brightness(0.9);
 }
 
-.pontoDiv {
+.pontoSub {
     color: green;
     text-align: right;
 }

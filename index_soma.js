@@ -17,8 +17,6 @@ const formSomaE1 = document.getElementById("formSoma");
 //pega o que está no id "pontoS" e salva na variável "pontoSE1".
 const pontoSomaE1 = document.getElementById("pontoS")
 
-const imagemE1 = document.getElementById("imagem")
-
 
 //
 let pontoS = JSON.parse(localStorage.getItem("pontoS"));
@@ -37,7 +35,7 @@ if (!pontoS) {
 pontoSomaE1.innerText = "ponto :" + pontoS;
 
 //pega os valores da var "questaoE1", e exibi na tela, com algumas modificações nos números.
-questaoSomaE1.innerText = "Quanto é " + num1s + " + " + num2s + " ? "
+questaoSomaE1.innerText = "Quanto é " + num1s + " Mais " + num2s + " ? "
 
 //pega os números e multiplica eles, depois salva na var "correctAns"(resposta_correta)
 const correctSomaAns = num1s + num2s;

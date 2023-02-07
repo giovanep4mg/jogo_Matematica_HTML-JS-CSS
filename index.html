@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styleSoma.css" />
     <link rel="stylesheet" href="styleDiv.css" />
+    <link rel="stylesheet" href="styleSub.css">
   </head>
   <body>
     <div class="multiplicacao" id="multiplicacao">
@@ -30,11 +31,11 @@
       </form>
       <script src="index.js"></script>
     </div>
-    <div class="soma" id="soma" style="width: 500px;" >
+    <div class="soma" id="soma" style="width: 500px; " >
       <form class="formSoma" id="formSoma">
         <h2>Adição</h2>
         <h4 class="pontoS" id="pontoS">Pontos:0</h4>
-        <h1 id="questaoSoma">Quanto é 1 + 1 ?</h1>
+        <h1 id="questaoSoma">Quanto é 1 Mais 1 ?</h1>
         <input
           type="number"
           class="inputSoma"
@@ -47,6 +48,7 @@
       </form>
       <script src="index_soma.js"></script>
     </div>
+    <br>
     <div class="divisao" id="divisao">
       <form class="formDiv" id="formDiv">
         <h2>Divisão</h2>
@@ -63,6 +65,24 @@
         <button type="submit" class="btnDiv">Confirma</button>
       </form>
       <script src="indexDiv.js"></script>
+    </div>
+    <br>
+    <div class="subtracao" id="subtracao" style="width: 500px;">
+      <form class="formSub" id="formSub">
+        <h2>subtração</h2>
+        <h4 class="pontoSub" id="pontoSub">Pontos:0</h4>
+        <h1 id="questaoSub">Quanto é 1 Menos 1 ?</h1>
+        <input
+          type="number"
+          class="inputSub"
+          id="inputSub"
+          placeholder="Digite o número aqui  "
+          autofocus
+          autocomplete="off"
+        />
+        <button type="submit" class="btnSub">Confirma</button>
+      </form>
+      <script src="indexSub.js"></script>
     </div>
   </body>
 </html>

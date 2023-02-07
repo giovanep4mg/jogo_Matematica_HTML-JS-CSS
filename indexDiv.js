@@ -1,20 +1,22 @@
-/**criar duas variáveis,num1 e num2.
- * Math.randon() * 10 > fará 10 números aleatório,em decimais.
- * Math.ceil > pega esses 10 números, e coloca eles em inteiro.
+/**criar duas variáveis,num1Div e num2Div.
+ * Math.randon() * 50 > fará 10 números aleatório,em decimais.
+ * vai dividir somento por 2,para facilitar a vida do usuário
  */
-const num1Div = Math.ceil(Math.random() * 100)
-const num2Div = Math.ceil(Math.random() * 2)
+const lista = (2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100)
 
-//pega a tag id "questao", salva na var "questaoE1"
+const num1Div = Math.ceil(Math.random(lista) * 10)
+const num2Div = 2
+
+//pega a tag id "questaoDiv", salva na var "questaoDivE1"
 const questaoDivE1 = document.getElementById("questaoDiv");
 
-//pega a tag id "input", salva na var "inputE1"
+//pega o valor dentro da tag id "inputDiv", salva na var "inputDivE1"
 const inputDivE1 = document.getElementById("inputDiv");
 
-//pega a tag id "form", salva na var "formE1"
+//pega a tag id "formDiv", salva na var "formDivE1"
 const formDivE1 = document.getElementById("formDiv");
 
-//pega a tag id "ponto", salva na var "pontoE1"
+//pega a tag id "pontoDiv", salva na var "pontoDivE1"
 const pontoDivE1 = document.getElementById("pontoDiv")
 
 //
@@ -25,10 +27,10 @@ if (!pontoDiv) {
     pontoDiv = 0;
 }
 
-//pega o valor na var "pontoE1" e exibi na tela
+//pega o valor na var "pontoDivE1" e exibi na tela,mostrando os pontos
 pontoDivE1.innerText = "ponto :" + pontoDiv;
 
-//pega os valores da var "questaoE1", e exibi na tela, com algumas modificações nos números.
+//pega os valores da var "questaoDivE1", e exibi na tela, com algumas modificações nos números.
 questaoDivE1.innerText = "Quanto é " + num1Div + " dividido por " + num2Div + " ? "
 
 
@@ -38,22 +40,22 @@ const correctDivAns = num1Div / num2Div;
 //adiciona um ouvinte, no botão "submit"
 formDivE1.addEventListener("submit", () => {
 
-    //pega o valor adicionado no "input",e salva na var "userAns"(resposta_usuario)
+    //pega o valor adicionado no "inputDiv",e salva na var "userAns"(resposta_usuario)
     const userAns = +inputDivE1.value;
 
     //se (resposta_usuario é igual a resposta_correta)
     if (userAns == correctAns) {
 
-        //se for igual, adiciona +1 na var "ponto"
+        //se for igual, adiciona +1 na var "pontoDiv"
         pontoDiv++
 
-        //executa a função "updateLocalStorage()"
+        //executa a função "updateLocalStorageDiv()"
         updateLocalStorageDiv()
         //senão
     } else {
-        //se não for igual, retira -1, na var "ponto" 
+        //se não for igual, retira -1, na var "pontoDiv" 
         pontoDiv--
-        //executa essa função "updateLocalStorage"
+        //executa essa função "updateLocalStorageDiv()"
         updateLocalStorageDiv()
     }
 
