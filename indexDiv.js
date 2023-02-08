@@ -2,11 +2,11 @@
  * Math.randon() * 50 > fará 10 números aleatório,em decimais.
  * vai dividir somento por 2,para facilitar a vida do usuário
  */
-const lista = (2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100)
 
-const num1Div = Math.ceil(Math.random(lista) * 10)
+
+const num1Div = Math.ceil(Math.random() * 10)
 const num2Div = 2
-
+console.log(num1Div)
 //pega a tag id "questaoDiv", salva na var "questaoDivE1"
 const questaoDivE1 = document.getElementById("questaoDiv");
 
@@ -35,16 +35,16 @@ questaoDivE1.innerText = "Quanto é " + num1Div + " dividido por " + num2Div + "
 
 
 //pega os números e multiplica eles, depois salva na var "correctAns"(resposta_correta)
-const correctDivAns = num1Div / num2Div;
+const correctAnsDiv = num1Div / num2Div;
 
 //adiciona um ouvinte, no botão "submit"
 formDivE1.addEventListener("submit", () => {
 
     //pega o valor adicionado no "inputDiv",e salva na var "userAns"(resposta_usuario)
-    const userAns = +inputDivE1.value;
+    const userAnsDiv = +inputDivE1.value;
 
     //se (resposta_usuario é igual a resposta_correta)
-    if (userAns == correctAns) {
+    if (userAnsDiv == correctAnsDiv) {
 
         //se for igual, adiciona +1 na var "pontoDiv"
         pontoDiv++
