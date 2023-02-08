@@ -9,10 +9,11 @@ html {
 header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
-    color: rgba(203, 236, 19, 0.819);
+    color: rgba(234, 246, 5, 0.874);
     text-align: center;
     align-items: center;
     text-decoration: underline;
+    text-underline-position: below;
 }
 
 div {
@@ -43,6 +44,16 @@ h3 {
     font-family: cursive;
     color: #bc1919f0;
     font-size: 22px;
+}
+
+.copy {
+    background-color: rgb(58, 217, 10);
+    font-size: 30px;
+}
+
+.links {
+    background-color: rgb(58, 217, 10);
+    font-size: 30px;
 }
 
 .multiplicacao {
